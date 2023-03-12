@@ -73,16 +73,16 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
 
         if (mSensorAmbient == null){
-            mTextSensorLight.setText(sensorerror);
+            mTextSensorAmbient.setText(sensorerror);
         }
         if (mSensorPreassure == null){
-            mTextSensorProximity.setText(sensorerror);
+            mTextSensorPreassure.setText(sensorerror);
         }
         if (mSensorMagnetic == null){
-            mTextSensorLight.setText(sensorerror);
+            mTextSensorMagnetic.setText(sensorerror);
         }
         if (mSensorHumidity == null){
-            mTextSensorProximity.setText(sensorerror);
+            mTextSensorHumidity.setText(sensorerror);
         }
 
 
@@ -151,8 +151,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             default:
                 //do nothing
         }
-
-
     }
 
     private void changeBackgroundColor(float currentValue) {
